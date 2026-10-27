@@ -211,6 +211,10 @@ Run the PowerShell script to create directory junctions and symbolic links:
 
 * **Security First:** Never commit credentials, private API keys, or personal
   secrets to this repository. Use environment variables or secret managers.
+* **Information Density & Anti-Fluff:** System instructions adhere to Andrej
+  Karpathy's high information density framework (controlled ASD-STE100 language,
+  structural diagrams over prose, interactive single-file artifacts, and zero
+  conversational boilerplate).
 * **Markdownlint Compliance:** Ensure all `.md` files adhere to standard
   markdownlint rules (`MD001` through `MD046`).
 * **Modular Configuration:** Keep global instructions high-level and

@@ -12,24 +12,41 @@
 * **Direct Interaction:** All conversations, explanations, questions, and chat output must be strictly in **Brazilian Portuguese**.
 * **Deliverables & Code:** All source code, technical documentation, configuration files, and code comments must follow project standards (English or Brazilian Portuguese as requested).
 
-## 3. Model Context Protocol (MCP) Integrations
+## 3. Cognitive Ergonomics & Output Density (Karpathy Framework)
+
+Maximize information density to eliminate cognitive fatigue during design system governance and frontend engineering.
+
+* **Anti-Fluff & Direct Execution:** Zero conversational preambles or boilerplate closings. Provide dense, structured, actionable answers immediately.
+* **Controlled Technical Language (~80% ASD-STE100):**
+  * Mandatory for design token specifications, component migration runbooks, and incident post-mortems.
+  * Maximum 20-25 words per sentence.
+  * Use active imperative voice and enforce one action per sentence.
+  * Eliminate ambiguity, speculative phrasing, and unnecessary adjectives.
+* **Structural Diagrams (Mermaid & ASCII):**
+  * Replace descriptive paragraphs with Mermaid.js or ASCII diagrams for component hierarchies, token inheritance trees, state transitions, and CI/CD regression test pipelines.
+* **Interactive Design & Sizing Artifacts:**
+  * When demonstrating UI component variants, color contrast calculators (a11y), or token cascading logic, generate single-file self-contained HTML/JS applications.
+* **Programmatic Explanations:**
+  * Use runnable scripts or Python Manim animations for complex CSS bezier transitions, layout algorithms, or token transformations.
+
+## 4. Model Context Protocol (MCP) Integrations
 
 * **Design Tokens & UI Specs:** Use the `figma-mcp-server` exclusively for inspecting design tokens, exported assets, layout measurements, and component variants.
 * **Issue & Sprint Tracking:** Use the `atlassian-mcp-server` exclusively for querying Jira stories, epics, bug reports, and sprint tasks.
 * **Frontend Telemetry & Errors:** Use the `sentry-mcp` for investigating production client-side exceptions, trace logs, and Core Web Vitals performance anomalies.
 
-## 4. Frontend & Accessibility Standards
+## 5. Frontend & Accessibility Standards
 
 * **Security First:** Never expose secrets, private tokens, or sensitive user data in client-side bundles.
 * **Component Governance:** All shared components must be documented in Storybook with unit tests (Jest) and visual regression tests (Playwright).
 * **Accessibility (a11y):** Enforce ARIA roles, keyboard navigation, high-contrast compliance, and screen-reader compatibility across all views.
 
-## 5. Operational Guidelines & Autonomy
+## 6. Operational Guidelines & Autonomy
 
 * **Context Discovery:** If an `AGENTS.md` file exists in the workspace root or component packages, read it before executing tasks.
 * **Proactive Investigation:** Autonomously inspect component source code, token schemas, and package dependencies before asking for clarification.
 
-## 6. Documentation & Markdown Standards
+## 7. Documentation & Markdown Standards
 
 Strictly follow [markdownlint](https://github.com/DavidAnson/markdownlint) rules and the [Markdown Guide](https://www.markdownguide.org/):
 
@@ -38,7 +55,7 @@ Strictly follow [markdownlint](https://github.com/DavidAnson/markdownlint) rules
 * **Style:** No trailing spaces (`MD009`), no tabs (`MD010`), and require space after `#` (`MD018`).
 * **Code Blocks:** Fenced code blocks must specify the language identifier (`MD046`).
 
-## 7. Git & Version Control
+## 8. Git & Version Control
 
 * **Commit Messages:** Must be a single line, written in **Brazilian Portuguese**.
 * **Format:** Do NOT use Conventional Commits (no `feat:`, `fix:`, `chore:`, etc.). Write natural, descriptive, imperative sentences in Brazilian Portuguese.
